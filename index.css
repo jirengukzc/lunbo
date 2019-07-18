@@ -1,0 +1,71 @@
+*{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+a{text-decoration: none;}
+
+.carousel{
+  position: relative;
+  width: 320px;
+  height: 180px;
+  margin: 30px auto;
+  overflow: hidden;
+  border: 1px solid red;
+} 
+
+.carousel ul,
+.carousel li{
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.carousel .img-ct{
+  position: absolute;
+  overflow: hidden;
+}
+.carousel .img-ct img{
+  width: 320px;
+  height: 180px;
+}
+.carousel .img-ct>li {
+  float: left;
+}
+
+.carousel .iconfont{
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  margin-top: -15px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #fff;
+}
+.carousel .icon-prev {
+  left: 10px;
+}
+.carousel .icon-next {
+  right: 10px;
+}
+.carousel .iconfont:hover{
+  opacity: 0.8;
+}
+
+.carousel .bullet{
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  font-size: 0;
+  text-align: center;
+  z-index: 1;
+}
+.carousel .bullet>li{
+  display: inline-block;
+  width: 30px;
+  height: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.carousel .bullet>li.active{
+  background: #ccc;
+}
